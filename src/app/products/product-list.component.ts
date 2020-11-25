@@ -30,7 +30,7 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit(): void {
     this.products = this.productService.getProducts();
-    this.listFilter = 'cart';
+    this.filteredProducts = this.products;
   }
   toggleImage(): void {
     this.showImage = !this.showImage;
